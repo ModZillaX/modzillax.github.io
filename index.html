@@ -1,0 +1,765 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brawl Stars Mods</title>
+  <link rel="icon" href="logo.png" />
+  <meta name="description" content="Download the latest and safest Brawlsmod APK file. Play with updated mod features and exclusive content for free!">
+  <meta name="keywords" content="brawlsmod, brawl stars mod, brawls mod apk download, brawlsmod 2025">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --main-bg: #0e0e0e;
+      --accent: #28a745;
+      --text: #fff;
+      --subtext: #ccc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .search-bar {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .search-bar input {
+      padding: 0.8rem 1rem;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .game {
+      background: #1e1e1e;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .game:hover {
+      transform: translateY(-5px);
+    }
+
+    .game img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .game h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .game p {
+      color: var(--subtext);
+      font-size: 0.95rem;
+    }
+
+    .download-btn {
+      margin-top: 1rem;
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background: #218838;
+    }
+
+    /* Şık bilgi butonu */
+    .fancy-btn {
+      margin-top: 12px;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      border: none;
+      border-radius: 30px;
+      padding: 0.65rem 1.6rem;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+      display: inline-flex;
+      align-items: center;
+      transition: background 0.3s ease;
+    }
+
+    .fancy-btn:hover {
+      background: linear-gradient(135deg, #0056b3, #003d80);
+      box-shadow: 0 6px 14px rgba(0, 86, 179, 0.7);
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      color: #888;
+      padding: 1rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+
+    /* Bilgi sayfası stili */
+    #infoPage {
+      display: none;
+      padding: 3rem 1rem;
+      max-width: 700px;
+      margin: 3rem auto;
+      background: #222;
+      border-radius: 10px;
+      color: var(--text);
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+
+    #infoPage button {
+      margin-top: 2rem;
+      background: #555;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #infoPage button:hover {
+      background: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to ModZillaX Website...</h1>
+    <nav>
+      <a href="https://brawlsmod.github.io/" target="_blank">BrawlsMod</a>
+      <a href="" target="_blank">Natesworks</a>
+      <a href="https://discord.gg/invite/mtmods" target="_blank">Discord</a>
+    </nav>
+  </header>
+
+  <div class="container" id="mainContent">
+    <div class="search-bar">
+      <input type="text" placeholder="Search Brawl Stars mods..." id="searchInput" onkeyup="searchGames()" />
+      <br />
+      <a href="https://brawlstars.fandom.com/wiki/Carry_the_Gift" target="_blank" style="display:inline-block; margin-top:15px; background:var(--accent); color:white; padding:0.7rem 1.5rem; border-radius:6px; text-decoration:none; font-weight:500;">New gift is free!!</a>
+   <p>All of these modes are up to date and free, you can play them as much as you want.<p>
+   </div>
+
+    <div class="games" id="games">
+      <!-- Game 1 -->
+      <div class="game" data-info="info1">
+        <img src="app1.png" alt="" />
+        <h2>Magic Brawl</h2>
+        <h2>· Private server<h2>
+        <p>Magic brawl is a server that includes old brawl stars, everyone can play on this server and spend time with your friends.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+
+        <a class="download-btn" href="https://files.magic-servers.xyz/mb.apk" target="_blank">Download</a>
+      </div>
+
+      <div class="game" data-info="info2">
+        <img src="app2.png" alt="" />
+        <h2>Nulls Brawl</h2>
+        <h2>· Private server<h2>
+        <p>In this mode, everything is unlimited diamonds, characters, everything you want, you can climb the leaderboards.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://tempweb.nullsusercontent.com/fpexp/nb_0744f5f6/nb_61.249u1_fp.apk" target="_blank">Download</a>
+       
+        </div>
+        <div class="game" data-info="info3">
+        <img src="app3.png" alt="" />
+        <h2>Retro Brawl</h2>
+        <h2>· Private server<h2>
+        <p>This mod contains the oldest version of brawl stars, the same as the old brawl stars, old diamonds and characters.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://files.magic-servers.xyz/retrobrawl.apk" target="_blank">Download</a>
+        </div>
+
+         <div class="game" data-info="info4">
+        <img src="app4.png" alt="" />
+        <h2>BSD Brawl</h2>
+        <h2>· Official server<h2>
+        <p>This mod optimizes the brawl stars game, that is, it increases fps and is a mod created to give more fps on old devices.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlmods/bsdbrawl/bsd_brawl_v61.249_(30).apk" target="_blank">Download</a>
+      </div>
+
+         <div class="game" data-info="info5">
+        <img src="app5.png" alt="" />
+        <h2>Gene Brawl</h2>
+        <h2>· Official server<h2>
+        <p>This mode is more of a brawl stars cheat and increases fps. You can open the side menu and try the cheats in this mode.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlmods/genebrawl/genebrawlfree.apk" target="_blank">Download</a>
+      </div>
+
+        <div class="game" data-info="info6">
+        <img src="app6.png" alt="" />
+        <h2>Tale Brawl</h2>
+        <h2>· Official server<h2>
+        <p>In this mode there are aim and kit cheats and more cheats. You can send bots to your own team or send fake spectators to yourself.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlmods/tale/Tale+Stars_59.197_v1.1.apk" target="_blank">Download</a>
+      </div>
+
+      <div class="game" data-info="info7">
+        <img src="app7.png" alt="" />
+        <h2>Surge Brawl</h2>
+        <h2>· Offline<h2>
+        <p>This mod has many features and many characters and the mod is offline.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlmods/surgeoffline/surgeoffline-amethyst.apk" target="_blank">Download</a>
+      </div>
+
+       <div class="game" data-info="info8">
+        <img src="app8.png" alt="" />
+        <h2>Cool Brawl</h2>
+        <h2>· Offline<h2>
+        <p>This mod has new skins and more features. It's a great game that you can play without internet.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlstars/mods/coolbrawl/Cool+Brawl_v2.1.0.apk" target="_blank">Download</a>
+      </div>
+
+     <div class="game" data-info="info9">
+        <img src="app9.png" alt="" />
+        <h2>Multi Brawl</h2>
+        <h2>· Offline<h2>
+        <p>This mod is a mod that makes brawl stars similar characters better, there are many effects and very animated characters in the game.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://www.mediafire.com/file/iswzt3wwci249f5/Multi_Brawl_v47.022.apk/file" target="_blank">Download</a>
+      </div>
+
+     <div class="game" data-info="info10">
+        <img src="app10.png" alt="" />
+        <h2>Aim Brawl</h2>
+        <h2>· Offline<h2>
+        <p>If your bullets cannot touch someone with this mod, you can touch them with this mod.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://www.mediafire.com/file/7gskpz9kijgbpgy/aimbot+brawl.apk/file" target="_blank">Download</a>
+      </div>
+
+     <div class="game" data-info="info11">
+        <img src="app11.png" alt="" />
+        <h2>Sigma Brawl</h2>
+        <h2>· Private server<h2>
+        <p>There are old characters and more in this mode. It may be the best mode. It also has private servers.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://mcead.com/index.php?do=file-page&id=6695&news_id=2200&name=Sigma%20Brawl%20v20.93%20(NEW%20VERSION)&use=1" target="_blank">Download</a>
+      </div>
+
+       <div class="game" data-info="info12">
+        <img src="app12.png" alt="" />
+        <h2>GTX Brawl</h2>
+        <h2>· Offline<h2>
+        <p>There are costumes, items and more for Chinese Brawl Stars in this mode.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlmods/gtxbrawl/GTXBRAWL_Axusterra.apk" target="_blank">Download</a>
+      </div>
+
+       <div class="game" data-info="info13">
+        <img src="app13.png" alt="" />
+        <h2>Heart Brawl</h2>
+        <h2>· Private server<h2>
+        <p>This mode is created for some characters and its private servers are always active.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlmods/heartbrawl/HeartBrawl_V32.apk" target="_blank">Download</a>
+      </div>
+
+        <div class="game" data-info="info14">
+        <img src="app14.png" alt="" />
+        <h2>Project Brawl</h2>
+        <h2>· Offline<h2>
+        <p>A brawl stars mod that contains many features and characters. I wish you good games.</p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlmods/projectflickz/ProjectFlickzBeta1.1.apk" target="_blank">Download</a>
+      </div>
+
+       <div class="game" data-info="info15">
+        <img src="app15.png" alt="" />
+        <h2>Mandy Brawl</h2>
+        <h2>· Offline<h2>
+        <p>It is a brawl stars mode with the best characters and you can earn trophies in the mode.<p>
+        <button class="fancy-btn info-btn" aria-label="information">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="width:16px; height:16px; vertical-align:middle; margin-right:6px;"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
+          </svg>
+          information
+        </button>
+        <a class="download-btn" href="https://dl.natesworks.com/brawlmods/mandyscandy/Mandy's%20Candy%20-%20Bizarre%20circus.apk" target="_blank">Download</a>
+      </div>
+    </div>
+    <hr style="margin: 3rem 0; border: 1px solid #333" />
+<p>Brawl Stars mods are unofficial, modified versions of the original mobile game developed by Supercell. These versions are created by independent developers and gaming communities to offer players alternative gameplay experiences that differ from the official game. Mods often unlock all characters, provide unlimited in-game currencies such as gems and coins, and sometimes introduce custom skins, new maps, or special game modes not available in the official release.
+
+One of the main attractions of Brawl Stars mods is the immediate access to all brawlers without needing to unlock them through regular gameplay or purchases. This appeals to players who want to experiment with different characters or enjoy the full game without restrictions. Additionally, unlimited gems and coins allow players to upgrade their brawlers quickly and try out various skins or features that would otherwise require time or money.
+
+These modified versions usually operate on private servers, which are separate from Supercell’s official servers. As a result, progress and data in mods are isolated and do not affect official accounts. This separation ensures that players can explore the modded content without impacting their main Brawl Stars experience.
+
+However, it is important to note that Brawl Stars mods are not supported or authorized by Supercell, and using them may violate the game’s terms of service. Players should avoid using mods with their official accounts to prevent potential bans or other penalties. Moreover, since mods are developed by third parties, they may have bugs, stability issues, or security risks. Users should be cautious and download mods only from trustworthy sources, if at all.
+
+From an ethical and legal standpoint, players are encouraged to enjoy the official game to support the developers. Mods should be used responsibly and only for personal, educational, or entertainment purposes without infringing on the rights of the original game creators. Sharing or promoting mods that facilitate cheating or hacking in official gameplay environments is discouraged and can have serious consequences.
+
+In conclusion, Brawl Stars mods offer an alternative and often more flexible way to experience the game’s content. They unlock features and provide gameplay variations beyond the official game. Still, they come with risks and limitations, and users should be fully aware of these before deciding to use them. Responsible usage, respect for game developers, and adherence to legal guidelines ensure a safer and more enjoyable gaming environment for everyone.<p>
+<img src="dash.png" alt="">
+<p>Brawl Stars mods are unofficial versions of the game that are often updated regularly and available for free. These mods provide players with unlocked characters, unlimited resources, and unique features without any cost. Because they’re created by dedicated fans, mod versions frequently receive updates to stay compatible with the latest official game changes. However, since they are unofficial, users should always be careful and avoid using them with their main accounts.<p>
+    <section id="tools">
+      <h2 style="text-align:center; margin-bottom: 1rem;">Color Text Generator</h2>
+      <div style="background:#1e1e1e; padding:1rem; border-radius:10px; max-width:500px; margin:auto;">
+        <textarea id="inputText" rows="2" placeholder="Enter your text..." style="width:100%; padding:0.5rem;"></textarea>
+        <select id="colorSelect" onchange="update()" style="width:100%; margin: 1rem 0; padding:0.5rem;">
+          <option value="c1">White</option>
+          <option value="c2">Red</option>
+          <option value="c3">Green</option>
+          <option value="c4">Blue</option>
+          <option value="c5">Yellow</option>
+          <option value="c6">Pink</option>
+          <option value="c7">Orange</option>
+          <option value="c8">Gray</option>
+          <option value="c9">Purple</option>
+        </select>
+        <button onclick="generate()" style="width:100%; background:var(--accent); color:white; padding:0.5rem; border:none; border-radius:6px;">Generate</button>
+        <div style="margin-top:1rem;"><strong>Preview:</strong></div>
+        <div id="previewText" style="font-weight:bold; margin:0.5rem 0;"></div>
+        <div><strong>Color Code:</strong></div>
+        <div id="outputText" style="background:#2a2a2a; padding:0.5rem; border-radius:5px;"></div>
+        <button onclick="copyText()" style="margin-top:10px;width:100%;padding:8px;background:#444;color:white;border:none;border-radius:5px;">Copy</button>
+      </div>
+    </section>
+  </div>
+
+
+  <div id="infoPage">
+    <h2 id="infoTitle"></h2>
+    <div id="infoContent" style="margin-top:1rem; text-align:left;"></div>
+    <button onclick="hideInfoPage()">Back</button>
+  </div>
+
+  <footer id="footer">
+    <p>&copy; 2025 ModZillaX. All Rights Reserved.</p>
+    <p>Contact: fasterstudiox@gmail.com</p>
+  </footer>
+
+  <script>
+    const gameInfos = {
+      info1: {
+        title: "Magic Brawl",
+        content: `
+          <p>Magic Brawl is the rebirth of Brawl Stars and its best times! All content is available on the server: online battles, all the characters and everything. By downloading this server, you can get great pleasure from the updates, because we update the server every month!</p>
+        `,
+      },
+      info2: {
+        title: "Nulls Brawl",
+        content: `
+          <p>You have unlimited gems, gold and boxes. If you don't want to spend your time there are some free magic boxes waiting you in the shop.</p>
+          <p>Bots are... boring. Luckily, we have great multiplayer support so you can play with you friends without any lag.</p>
+          <p>We are trying to add new brawlers and features as fast as possible. Sometimes it takes only few days</p>
+        `,
+      },
+      info3: {
+        title: "Retro Brawl",
+        content: `
+          <p>Retro Brawl is the old version of Brawl Stars (2018). Online battles, 21 characters and star powers for them, clans, etc. are available on the server. Feel better times, from the old menu to the atmosphere!</p>
+       `,
+      },
+      info4: {
+        title: "BSD Brawl",
+        content: `
+          <p>BSD Brawl is a very advanced mode in terms of FPS, this mode has many more features such as fps adjustment.</p>
+       `,
+      },
+      info5: {
+        title: "Gene Brawl",
+        content: `
+          <p>Adds a debug menu allowing you to visually unlock all brawlers and more!</p>
+       `,
+      },
+      info6: {
+        title: "Tale Brawl",
+        content: `
+          <p>There are 11 features in it, one of the most famous features is the kit mode and aim cheat.</p>
+        `,
+      },
+      info7: {
+        title: "Surge Brawl",
+        content: `
+          <p>An offline version of Brawl Stars V28! Allows you to open boxes to unlock brawlers, gain trophies and play any mode. It also adds new skins and 3rd star powers for some brawlers</p>
+        `,
+      },
+      info8: {
+        title: "Cool Brawl",
+        content: `
+          <p>Adds mod menu, new skins, a new brawler and more.</p>
+        `,
+      },
+      info9: {
+        title: "Multi Brawl",
+        content: `
+          <p>A modified version of V29 that replaces ALL the brawlers will new ones.</p>
+         `,
+      },
+      info10: {
+        title: "Aim Brawl",
+        content: `
+          <p>This mod ensures that your bullets will hit someone 100% of the time.</p>
+         `,
+      },
+      info11: {
+        title: "Sigma Brawl",
+        content: `
+          <p>old characters and old items are all available in this mode for brawl stars</p>
+          `,
+      },
+      info12: {
+        title: "GTX Brawl",
+        content: `
+          <p>Adds skins from Chinese Brawl Stars, adds new skins, maps and modifiers.</p>
+            `,
+       },
+       info13: {
+        title: "Heart Brawl",
+        content: `
+          <p>V29 Server with Edgar, Byron, Amber and Collete ported.</p>
+          `,
+        },
+        info14: {
+        title: "Project Brawl",
+        content: `
+          <p>V44 server with 500 trophies per win, club league and club pass.</p>
+          `,
+        },
+        info15: {
+        title: "Mandy Brawl",
+        content: `
+          <p>Ports many brawlers from newer versions of the game.</p>
+        `,
+      },
+      
+    };
+
+    // Bilgi butonlarına tıklayınca
+    document.querySelectorAll(".info-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const gameDiv = btn.closest(".game");
+        const infoKey = gameDiv.getAttribute("data-info");
+
+        if (gameInfos[infoKey]) {
+          // Site içeriğini gizle
+          document.querySelector("header").style.display = "none";
+          document.querySelector(".container").style.display = "none";
+          document.getElementById("footer").style.display = "none";
+
+          // Bilgi sayfasına içeriği koy
+          document.getElementById("infoTitle").innerText = gameInfos[infoKey].title;
+          document.getElementById("infoContent").innerHTML = gameInfos[infoKey].content;
+
+          // Bilgi sayfasını göster
+          document.getElementById("infoPage").style.display = "block";
+
+          // Sayfayı üstten göster
+          window.scrollTo(0, 0);
+        }
+      });
+    });
+
+    function hideInfoPage() {
+      // Bilgi sayfasını gizle
+      document.getElementById("infoPage").style.display = "none";
+
+      // Site içeriğini göster
+      document.querySelector("header").style.display = "flex";
+      document.querySelector(".container").style.display = "block";
+      document.getElementById("footer").style.display = "block";
+
+      // Sayfayı üstten göster
+      window.scrollTo(0, 0);
+    }
+
+    // Arama fonksiyonu
+    function searchGames() {
+      const input = document.getElementById("searchInput").value.toLowerCase();
+      const games = document.querySelectorAll(".game");
+      games.forEach((game) => {
+        const title = game.querySelector("h2").innerText.toLowerCase();
+        game.style.display = title.includes(input) ? "block" : "none";
+      });
+    }
+
+    // Renk seçici kodu, generate, copyText vs. buraya aynen ekleyebilirsin
+    function colorToCSS(code) {
+      const colors = {
+        c1: "white", c2: "red", c3: "limegreen", c4: "dodgerblue",
+        c5: "gold", c6: "hotpink", c7: "orange", c8: "gray", c9: "purple"
+      };
+      return colors[code] || "white";
+    }
+
+    function generate() {
+      const text = document.getElementById("inputText").value;
+      const color = document.getElementById("colorSelect").value;
+      const result = `<${color}>${text}</c>`;
+      document.getElementById("outputText").innerText = result;
+      document.getElementById("previewText").style.color = colorToCSS(color);
+      document.getElementById("previewText").innerText = text;
+    }
+
+    function update() {
+      generate();
+    }
+
+    function copyText() {
+      const text = document.getElementById("outputText").innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+</html>
